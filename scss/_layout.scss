@@ -4,6 +4,11 @@
   padding: 0 4.5rem;
   position: relative;
   z-index: 2;
+
+  @media only screen and (max-width: $mobile) {
+    max-width: 37.5rem;
+    padding: 0 2.5rem;
+  }
 }
 
 .header {
@@ -11,7 +16,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
+
+    .nav__list-item {
+      &:last-of-type {
+        margin-right: 3.5rem;
+      }
+    }
   }
 }
 .section-intro {
@@ -24,6 +35,12 @@
     display: flex;
     justify-content: space-between;
     padding: 10.5rem 0 18rem;
+
+    @media only screen and (max-width: $mobile) {
+      padding: 0 0 27rem;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__bg-pattern--right {
@@ -32,6 +49,14 @@
     right: 0;
     width: 43.5rem;
     z-index: 10;
+
+    @media only screen and (max-width: $mobile) {
+      // display: inline-block;
+      width: 12.5rem;
+      height: 33rem;
+      top: 100%;
+      transform: translateY(-100%);
+    }
   }
 
   &__bg-pattern--left {
@@ -39,11 +64,21 @@
     left: 0;
     bottom: 0;
     z-index: 10;
+
+    @media only screen and (max-width: $mobile) {
+      bottom: 100%;
+      transform: translateY(100%);
+    }
   }
 
   .hero {
     position: relative;
     z-index: 5;
+
+    @media only screen and (max-width: $mobile) {
+      width: 100vw;
+      margin-bottom: 5rem;
+    }
   }
 }
 
@@ -51,18 +86,32 @@
   background-color: $color-white;
   padding: 30.5rem 0 1rem;
   position: relative;
-  margin-top: -33rem;
+  margin-top: -33.5rem;
+
+  @media only screen and (max-width: $mobile) {
+    margin-top: -17.5rem;
+    padding: 14rem 0 1rem;
+  }
 
   .feature-cards {
     margin-top: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $mobile) {
+      margin-top: 9rem;
+      flex-direction: column;
+    }
   }
 }
 
 .section-find-more {
   padding: 15rem 0;
+
+  @media only screen and (max-width: $mobile) {
+    padding: 14rem 0;
+  }
 }
 
 .footer {
@@ -70,6 +119,19 @@
   padding: 6.5rem 0;
   position: relative;
   overflow: hidden;
+
+  @media only screen and (max-width: $mobile) {
+    padding: 9rem 0;
+  }
+
+  &__logo {
+    height: 2rem;
+
+    @media only screen and (max-width: $mobile) {
+      height: 1.7rem;
+      margin-bottom: 3.5rem;
+    }
+  }
 
   &__bg-pattern {
     position: absolute;
@@ -83,6 +145,12 @@
     align-items: flex-start;
     padding-bottom: 3.2rem;
     border-bottom: 1px $color-grey-violet solid;
+
+    @media only screen and (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 4rem;
+    }
   }
 
   &__bottom {
@@ -91,8 +159,21 @@
     align-items: flex-start;
     margin-top: 4.5rem;
 
+    @media only screen and (max-width: $mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     & > * {
       margin-right: 19rem;
+
+      @media only screen and (max-width: $mobile) {
+        margin: 0 0 4.5rem 0;
+        &:last-child {
+          margin: 0;
+        }
+      }
     }
   }
 }

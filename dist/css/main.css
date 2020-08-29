@@ -23,6 +23,9 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1; }
+  @media only screen and (max-width: 375px) {
+    body {
+      text-align: center; } }
 
 ul {
   list-style: none; }
@@ -36,12 +39,18 @@ a {
   padding: 0 4.5rem;
   position: relative;
   z-index: 2; }
+  @media only screen and (max-width: 375px) {
+    .container {
+      max-width: 37.5rem;
+      padding: 0 2.5rem; } }
 
 .header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0; }
+  padding: 3rem 0; }
+  .header__content .nav__list-item:last-of-type {
+    margin-right: 3.5rem; }
 
 .section-intro {
   background-color: #2d2640;
@@ -52,40 +61,79 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 10.5rem 0 18rem; }
+    @media only screen and (max-width: 375px) {
+      .section-intro__content {
+        padding: 0 0 27rem;
+        flex-direction: column-reverse;
+        align-items: center; } }
   .section-intro__bg-pattern--right {
     position: absolute;
     top: -8rem;
     right: 0;
     width: 43.5rem;
     z-index: 10; }
+    @media only screen and (max-width: 375px) {
+      .section-intro__bg-pattern--right {
+        width: 12.5rem;
+        height: 33rem;
+        top: 100%;
+        transform: translateY(-100%); } }
   .section-intro__bg-pattern--left {
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: 10; }
+    @media only screen and (max-width: 375px) {
+      .section-intro__bg-pattern--left {
+        bottom: 100%;
+        transform: translateY(100%); } }
   .section-intro .hero {
     position: relative;
     z-index: 5; }
+    @media only screen and (max-width: 375px) {
+      .section-intro .hero {
+        width: 100vw;
+        margin-bottom: 5rem; } }
 
 .section-features {
   background-color: #fff;
   padding: 30.5rem 0 1rem;
   position: relative;
-  margin-top: -33rem; }
+  margin-top: -33.5rem; }
+  @media only screen and (max-width: 375px) {
+    .section-features {
+      margin-top: -17.5rem;
+      padding: 14rem 0 1rem; } }
   .section-features .feature-cards {
     margin-top: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 375px) {
+      .section-features .feature-cards {
+        margin-top: 9rem;
+        flex-direction: column; } }
 
 .section-find-more {
   padding: 15rem 0; }
+  @media only screen and (max-width: 375px) {
+    .section-find-more {
+      padding: 14rem 0; } }
 
 .footer {
   background-color: #fafafa;
   padding: 6.5rem 0;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 375px) {
+    .footer {
+      padding: 9rem 0; } }
+  .footer__logo {
+    height: 2rem; }
+    @media only screen and (max-width: 375px) {
+      .footer__logo {
+        height: 1.7rem;
+        margin-bottom: 3.5rem; } }
   .footer__bg-pattern {
     position: absolute;
     top: 0;
@@ -96,25 +144,42 @@ a {
     align-items: flex-start;
     padding-bottom: 3.2rem;
     border-bottom: 1px #837d87 solid; }
+    @media only screen and (max-width: 375px) {
+      .footer__top {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 4rem; } }
   .footer__bottom {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 4.5rem; }
+    @media only screen and (max-width: 375px) {
+      .footer__bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     .footer__bottom > * {
       margin-right: 19rem; }
+      @media only screen and (max-width: 375px) {
+        .footer__bottom > * {
+          margin: 0 0 4.5rem 0; }
+          .footer__bottom > *:last-child {
+            margin: 0; } }
 
 .logo {
   height: 1.8rem; }
 
 .nav {
-  margin-left: auto;
-  margin-right: 3.5rem; }
+  margin-left: auto; }
+  @media only screen and (max-width: 375px) {
+    .nav {
+      display: none; } }
   .nav__list {
     padding-left: 0;
     display: flex;
     align-items: center; }
-  .nav__list-item:not(:last-child) {
+  .nav__list-item:not(:last-of-type) {
     margin-right: 3rem; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.2rem;
@@ -156,6 +221,12 @@ a {
   margin-right: 9rem;
   position: relative;
   padding-top: 6rem; }
+  @media only screen and (max-width: 375px) {
+    .heading-primary {
+      font-size: 4rem;
+      margin-right: 0;
+      width: 100%;
+      padding-top: 5rem; } }
   .heading-primary::before {
     content: "";
     position: absolute;
@@ -163,6 +234,10 @@ a {
     height: 1px;
     width: 15rem;
     background-color: currentColor; }
+    @media only screen and (max-width: 375px) {
+      .heading-primary::before {
+        left: 50%;
+        transform: translateX(-50%); } }
   .heading-primary--white {
     color: #fff; }
   .heading-primary--black {
@@ -171,9 +246,16 @@ a {
 .paragraph {
   padding: 3rem 3rem 3rem 0;
   line-height: 1.8; }
+  @media only screen and (max-width: 375px) {
+    .paragraph {
+      padding: 2.5rem 0 4rem; } }
 
 .feature-box:not(:last-child) {
   margin-right: 3rem; }
+  @media only screen and (max-width: 375px) {
+    .feature-box:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 6rem; } }
 
 .feature-box__icon {
   margin-bottom: 4rem; }
@@ -182,6 +264,9 @@ a {
   font-size: 3rem;
   color: #2b272f;
   margin-bottom: 2.5rem; }
+  @media only screen and (max-width: 375px) {
+    .feature-box__heading {
+      font-size: 2.5rem; } }
 
 .feature-box__text {
   color: #837d87;
@@ -196,9 +281,18 @@ a {
   align-items: center;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 375px) {
+    .banner {
+      padding: 8rem 4.5rem 7rem;
+      flex-direction: column; } }
   .banner__heading {
     color: #fff;
-    font-size: 4.5rem; }
+    font-size: 4.5rem;
+    z-index: 2; }
+    @media only screen and (max-width: 375px) {
+      .banner__heading {
+        font-size: 3.5rem;
+        margin-bottom: 4.5rem; } }
   .banner__bg-pattern {
     position: absolute;
     top: 0;

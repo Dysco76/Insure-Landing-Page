@@ -33,9 +33,9 @@
             <li class="nav__list-item"><a href="" class="nav__link">How we work</a></li>
             <li class="nav__list-item"><a href="" class="nav__link">Blog</a></li>
             <li class="nav__list-item"><a href="" class="nav__link">Account</a></li>
+            <button class="btn btn__cta--black">View plans</button>
           </ul>
         </nav>
-        <button class="btn btn__cta--black">View plans</button>
       </div>
     </div>
   </header>
@@ -46,7 +46,6 @@
     <section class="section-intro">
       <div class="container">
         <div class="section-intro__content">
-          <div class="line"></div>
           <div class="section-text">
             <h1 class="heading-primary heading-primary--white">
               Humanizing <br>
@@ -59,13 +58,27 @@
             </p>
             <button class="btn btn__cta--white">View plans</button>
           </div>
-          <img src="img/image-intro-desktop.jpg" alt="hero-image" class="hero">
+
+          <picture class="hero">
+            <source srcset="img/image-intro-mobile.jpg" media="(max-width: 37.5em)">
+            <img srcset="img/image-intro-desktop.jpg" alt="hero image" class="hero">
+          </picture>
 
         </div>
       </div>
-      <img src="img/bg-pattern-intro-right-desktop.svg" alt="background-pattern"
-        class="section-intro__bg-pattern--right">
-      <img src="img/bg-pattern-intro-left-desktop.svg" alt="background-pattern" class="section-intro__bg-pattern--left">
+
+      <picture class="section-intro__bg-pattern--right">
+        <source srcset="img/bg-pattern-intro-right-mobile.svg" media="(max-width: 37.5em)">
+        <img srcset="img/bg-pattern-intro-right-desktop.svg" alt="background-pattern"
+          class="section-intro__bg-pattern--right">
+      </picture>
+
+
+      <picture class="section-intro__bg-pattern--left">
+        <source srcset="img/bg-pattern-intro-left-mobile.svg" media="(max-width: 37.5em)">
+        <img srcset="img/bg-pattern-intro-left-desktop.svg" alt="background-pattern"
+          class="section-intro__bg-pattern--left">
+      </picture>
     </section>
 
     <section class="section-features">
@@ -99,7 +112,11 @@
         <div class="banner">
           <h3 class="banner__heading">Find out more <br> about how we work</h3>
           <button class="btn btn__cta--white">How we work</button>
-          <img src="img/bg-pattern-how-we-work-desktop.svg" alt="background-pattern" class="banner__bg-pattern">
+
+          <picture class="banner__bg-pattern">
+            <source srcset="img/bg-pattern-how-we-work-mobile.svg" media="(max-width: 37.5em)">
+            <img srcset="img/bg-pattern-how-we-work-desktop.svg" alt="background-pattern" class="banner__bg-pattern">
+          </picture>
         </div>
       </div>
     </section>
@@ -108,7 +125,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <img src="img/logo.svg" alt="company-logo" class="logo">
+        <img src="img/logo.svg" alt="company-logo" class="footer__logo">
         <ul class="social-list">
           <li class="social-list__item">
             <a href="" class="social-list__link">
@@ -238,7 +255,10 @@
       </div>
     </div>
 
-    <img src="img/bg-pattern-footer-desktop.svg" alt="background-pattern" class="footer__bg-pattern">
+    <picture class="footer__bg-pattern">
+      <source srcset="img/bg-pattern-footer-mobile.svg" media="(max-width: 37.5em)">
+      <img srcset="img/bg-pattern-footer-desktop.svg" alt="background-pattern" class="footer__bg-pattern">
+    </picture>
   </footer>
 </body>
 
