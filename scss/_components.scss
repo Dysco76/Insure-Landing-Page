@@ -1,0 +1,219 @@
+/////////////////////////////////////
+// LOGO
+.logo {
+  height: 2rem;
+}
+
+/////////////////////////////////////
+// NAVBAR
+
+.nav {
+  margin-left: auto;
+  margin-right: 3.5rem;
+
+  &__list {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: block;
+      padding: 1rem 0;
+      text-transform: uppercase;
+      color: $color-grey-violet;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      color: $color-dark-violet;
+    }
+  }
+}
+
+/////////////////////////////////////
+// BUTTONS
+.btn {
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.3rem 3rem;
+  background-color: transparent;
+  letter-spacing: 2px;
+  cursor: pointer;
+  z-index: 2;
+  border: 1px solid currentColor;
+  transition: 0.2s;
+
+  &__cta--black {
+    color: $color-dark-violet;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-dark-violet;
+    }
+  }
+
+  &__cta--white {
+    color: $color-white;
+
+    &:hover {
+      color: $color-dark-violet;
+      background-color: $color-white;
+    }
+  }
+}
+
+/////////////////////////////////////
+// HEADINGS
+.heading-primary {
+  font-size: 6.9rem;
+  width: fit-content;
+  margin-right: 9rem;
+  position: relative;
+  padding-top: 6rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 15rem;
+    background-color: currentColor;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--black {
+    color: $color-dark-violet;
+  }
+}
+
+/////////////////////////////////////
+// PARAGRAPHS
+.paragraph {
+  padding: 3rem 3rem 3rem 0;
+  line-height: 1.8;
+}
+
+/////////////////////////////////////
+// FEATURE BOX
+.feature-box {
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  &__icon {
+    margin-bottom: 4rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    color: $color-dark-violet;
+    margin-bottom: 2.5rem;
+  }
+
+  &__text {
+    color: $color-grey-violet;
+    line-height: 1.6;
+    font-size: 1.6rem;
+  }
+}
+
+/////////////////////////////////////
+// BANNER
+
+.banner {
+  background-color: $color-primary;
+  padding: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &__heading {
+    color: $color-white;
+    font-size: 4.5rem;
+  }
+
+  &__bg-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/////////////////////////////////////
+// SOCIAL PANEL
+.social-list {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-grey-violet;
+      font-size: 2.5rem;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      color: $color-dark-violet;
+    }
+  }
+}
+
+/////////////////////////////////////
+// FOOTER NAVBAR
+.footer-nav {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &__heading {
+    color: $color-grey-violet;
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 2.3rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-dark-violet;
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-dark-violet;
+    }
+  }
+}

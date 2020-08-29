@@ -1,0 +1,24 @@
+{
+  "name": "insure_landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss dist/css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass scss/main.scss dist/css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/main.comp.css -o dist/css/main.prefix.css",
+    "compress:css": "node-sass dist/css/main.prefix.css dist/css/main.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Dmytro",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
+  }
+}
