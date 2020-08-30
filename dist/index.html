@@ -24,18 +24,33 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__content">
         <img src="img/logo.svg" alt="company-logo" class="logo">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__list-item"><a href="" class="nav__link">How we work</a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">Blog</a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">Account</a></li>
-            <button class="btn btn__cta--black">View plans</button>
-          </ul>
-        </nav>
+        <input type="checkbox" id="navi-toggle" class="navbar__checkbox" onclick="fixHeader()">
+
+        <label for="navi-toggle" class="navbar__button">
+          <span class="navbar__icon">&nbsp;</span>
+        </label>
+
+
+        <div class="navbar">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a href="#" class="nav__link">How we work</a></li>
+              <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
+              <li class="nav__list-item"><a href="#" class="nav__link">Account</a></li>
+              <button class="btn btn__cta--black btn__cta--nav">View plans</button>
+            </ul>
+          </nav>
+
+          <picture class="navbar__bg-pattern">
+            <source srcset="img/bg-pattern-mobile-nav.svg" media="(max-width: 37.5em)">
+            <img srcset="" alt="background-pattern" class="navbar__bg-pattern">
+          </picture>
+
+        </div>
       </div>
     </div>
   </header>
@@ -128,17 +143,17 @@
         <img src="img/logo.svg" alt="company-logo" class="footer__logo">
         <ul class="social-list">
           <li class="social-list__item">
-            <a href="" class="social-list__link">
+            <a href="#" class="social-list__link">
               <i class="fab fa-facebook-square social-list__icon"></i>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link social-list__icon">
+            <a href="#" class="social-list__link social-list__icon">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link social-list__icon">
+            <a href="#" class="social-list__link social-list__icon">
               <i class="fab fa-pinterest"></i>
             </a>
           </li>
@@ -261,5 +276,7 @@
     </picture>
   </footer>
 </body>
+
+<script src="index.js"></script>
 
 </html>

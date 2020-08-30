@@ -5,45 +5,6 @@
 }
 
 /////////////////////////////////////
-// NAVBAR
-
-.nav {
-  margin-left: auto;
-  @media only screen and (max-width: $mobile) {
-    display: none;
-  }
-
-  &__list {
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  &__list-item {
-    &:not(:last-of-type) {
-      margin-right: 3rem;
-    }
-  }
-
-  &__link {
-    &:link,
-    &:visited {
-      font-size: 1.2rem;
-      font-weight: 700;
-      display: block;
-      padding: 1rem 0;
-      text-transform: uppercase;
-      color: $color-grey-violet;
-      transition: 0.2s;
-    }
-
-    &:hover {
-      color: $color-dark-violet;
-    }
-  }
-}
-
-/////////////////////////////////////
 // BUTTONS
 .btn {
   border: none;
